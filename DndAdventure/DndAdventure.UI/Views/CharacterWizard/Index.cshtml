@@ -1,0 +1,51 @@
+﻿@using DndAdventure.Models.Constants;
+@model DndAdventure.Models.Models.CharacterWizard
+
+<h1>D&D Character Creation Wizard</h1>
+
+<div class="d-flex align-items-start">
+    <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Deacription</button>
+        <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Race</button>
+        <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Class</button>
+    </div>
+    <div class="tab-content" id="v-pills-tabContent">
+        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+            <form method="post" action="SetDescription">
+                <label>Name</label>
+                <input type="text" />
+            </form>
+        </div>
+        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+            <form method="post" action="SetRace">
+                <div class="container">
+                    <div class="row row-cols-2">
+                        @foreach (var characterRace in Model.Races)
+                        {
+
+                            <div class="col">
+                                <img src="https://cdn.vectorstock.com/i/preview-1x/85/07/spear-icon-design-vector-33818507.jpg">
+                                <p>@characterRace.Name</p>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+            <form method="post" action="SetClass">
+                <ul>
+                    @foreach (var characterClass in Model.Classes)
+                    {
+                        <li>
+                            <label>
+                                <input type="radio" name="SelectedClass" value="@characterClass.Name" />
+                                @characterClass.Name
+                            </label>
+                        </li>
+                    }
+                </ul>
+            </form>
+        </div>
+    </div>
+</div>

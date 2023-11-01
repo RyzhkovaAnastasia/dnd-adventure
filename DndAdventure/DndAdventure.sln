@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DndAdventure", "DndAdventure\DndAdventure.csproj", "{A3AE11D4-21B2-4E52-8BB4-687748D46064}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DndAdventure.Models", "DndAdventure.Models\DndAdventure.Models.csproj", "{EB27819E-2327-442F-AAEF-4CC703526471}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DndAdventure.BL", "DndAdventure.BL\DndAdventure.BL.csproj", "{E5EE596C-0A85-42E8-93D2-7256D55071BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DndAdventure.UI", "DndAdventure.UI\DndAdventure.UI.csproj", "{30F49C90-2D57-4E9A-B6EC-9D7E7B595AE2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +15,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A3AE11D4-21B2-4E52-8BB4-687748D46064}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A3AE11D4-21B2-4E52-8BB4-687748D46064}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A3AE11D4-21B2-4E52-8BB4-687748D46064}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A3AE11D4-21B2-4E52-8BB4-687748D46064}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB27819E-2327-442F-AAEF-4CC703526471}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB27819E-2327-442F-AAEF-4CC703526471}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB27819E-2327-442F-AAEF-4CC703526471}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB27819E-2327-442F-AAEF-4CC703526471}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5EE596C-0A85-42E8-93D2-7256D55071BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5EE596C-0A85-42E8-93D2-7256D55071BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5EE596C-0A85-42E8-93D2-7256D55071BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5EE596C-0A85-42E8-93D2-7256D55071BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30F49C90-2D57-4E9A-B6EC-9D7E7B595AE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30F49C90-2D57-4E9A-B6EC-9D7E7B595AE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30F49C90-2D57-4E9A-B6EC-9D7E7B595AE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30F49C90-2D57-4E9A-B6EC-9D7E7B595AE2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
